@@ -1,0 +1,240 @@
+<html>
+	<head>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	
+	<link
+		rel="stylesheet"
+		href="prism-atom-dark.css"
+		type="text/css"
+		media="screen"
+	/>
+
+	<script type="text/javascript" src="prism.js"></script>
+	<script type="text/javascript" src="prism.ruby.js"></script>
+
+
+	<title>Phil Gerity</title>
+	<meta name="description" content="Phil Gerity is a professional
+	software engineer with experience in both program management and full-stack web development.">
+	</head>
+
+	<body>
+		<div class="about-container">
+			<ul>
+				<li><a href="#" class="nav-link">ABOUT</a></li>
+				<li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+				<li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+				<li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+  				<li class="hire-me"><a href="#hire-me" class="nav-link">CONTACT ME</a></li>
+			</ul>
+
+			<div class="about">
+				<img src="me.jpg" class="me"/>
+
+				<h1>Phil Gerity</h1>
+
+
+				<h2>BUSINESS & PRODUCT LEADER</h2>
+				<h2>(& WEB DEVELOPER)</h2>
+
+				<hr class="grey" />
+
+				<p class="bio">
+				Phil has an extensive background in software product management, business consulting, and has also owned and operated multiple businesses.  He has been employed at Microsoft since 2008 as a Principal Program Manager where he leads technical teams to develop commercial software.
+				</p>  
+				<p class="bio">
+				Over the last couple of years, Phil became interested in learning to code as a personal investment.  He spent 2017 dabbling in courses from Pluralsight, Harvard CS50, and Lynda.com.  In early 2018, he got serious and enrolled in The Firehose Project, a 42-week coding bootcamp for aspiring web developers.  Through these courses Phil has built up a portfolio as a developer, which is presented below.
+				</p>
+			</div>
+		</div>
+
+		<h3 id="code-samples">Code Snippets</h3>
+
+		<hr class="yellow">
+
+		<div class="box">
+			<h4>Temperature Conversion</h4>
+			<p>
+				This ruby program will prompt the user for a temperature
+				in degrees Celsius and let the user know what the
+				corresponding temperature is in Fahrenheit.
+			</p>
+		</div>
+			  
+		<div class="box">
+<pre><code class="language-ruby">def c2f(num)
+	return num * 9/5 + 32
+end
+
+puts &quot;Enter degrees in Celcius:&quot;
+celcius = gets.chomp.to_i
+
+Response = &quot;The temperature is #{c2f(celcius)} degrees Fahrenheit&quot;
+puts Response</code></pre>
+		</div>
+
+		<br class="clear" />
+
+		<div class="box">
+<pre><code class="language-ruby">puts &quot;Enter a number:&quot;
+number = gets.chomp.to_i
+
+def right_most_digit_finder(number)
+	
+		if number == 11 || number == 12 || number == 13
+			return &quot;That's the #{number}th item!&quot;
+		elsif number % 10 == 1
+			return &quot;That's the #{number}st item!&quot;
+		elsif number % 10 == 2
+			return &quot;That's the #{number}nd item!&quot;
+		elsif number % 10 == 3
+			return &quot;That's the #{number}rd item!&quot;
+		else &quot;That's the #{number}th item!&quot;
+
+		end
+
+end 
+
+puts right_most_digit_finder(number)</code></pre>
+		</div>
+		
+		<div class="box">
+			<h4>Ordinal Challenge</h4>
+			<p>
+				This ruby program will convert a plain number
+				to the ordinal of the number. So for example,
+				if the user enters 2, it will display 2nd, if
+				the user enters 3, it will display 3rd, etc.
+			</p>
+		</div>
+		
+		<br class="clear" />
+
+		<div class="box">
+			<h4>Foobar</h4>
+			<p>
+				This ruby program is an adaptation of a classic technical
+				interview problem which displays sequences
+				of the Foobar pattern.
+			</p>
+		</div>
+		
+		<div class="box">
+<pre><code class="language-ruby">puts &quot;Enter the number of rounds we shall play:&quot;
+rounds = gets.chomp.to_i
+
+numbers = (1..rounds).to_a
+numbers.each do |number|
+	if number % 3 == 0 &amp;&amp; number % 5 == 0
+		puts &quot;foobar&quot;
+	elsif number % 3 == 0
+		puts &quot;foo&quot;
+	elsif number % 5 == 0
+		puts &quot;bar&quot;
+	else 
+		puts number
+		
+	end
+end</code></pre>
+		</div>
+		
+		<br class="clear" /> 
+		
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="yellow" />
+		
+		<div class="box">
+			<h4>Quote Generator</h4>
+			<img src="splurty.png" class="full-width" />
+			<p>
+				A database-powered quote generator with a mobile-first
+				design, using the Ruby on Rails framework, HTML, and CSS.
+				Uses Git and GitHub for version control, and launched
+				on Heroku.
+			</p>
+		</div>
+
+		<div class="box">
+			<h4>Yelp Clone</h4>
+			<img src="nomster.png" class="full-width" />
+			<p>
+				A Yelp clone that integrates with the Google Maps API
+				and includes features like user comments, star ratings,
+				image uploading, and user authentication.
+			</p>
+		</div>
+		<br class="clear" />
+	
+		<div class="box">
+			<h4>Two-Sided Market Place</h4>
+			<img src="flixter.png" class="full-width" />
+			<p>
+				A two-sided, video-streaming marketplace platform that
+				features credit card payment capabilities, user role
+				management, complex user interfaces, and advanced
+				database relationships.
+			</p>
+		</div>
+		<div class="box">
+			<h4>Test Driven Development</h4>
+			<img src="grammable.png" class="full-width" />
+			<p>
+				An Instagram clone that was built using industry-standard, test-driven
+				development following numerous red/green/refactor cycles.
+			</p>
+		</div>
+		<br class="clear" />
+		<div class="box">
+			<h4>Single Page Todo Application</h4>
+			<img src="todoster.png" class="full-width" />
+			<p>
+				This single-page to-do application features a
+				fluid user interface that- by using JavaScript-
+				allows users to rapidly add dynamic content.
+			</p>
+		</div>
+			<div class="box">
+			<h4>Agile Team Project</h4>
+			<img src="chess.png" class="full-width" />
+			<p>
+				Worked on an Agile software development team building
+				a chess application. Under the guidance of a senior software engineer,
+				we had weekly Agile team meetings for code reviews, sprint planning,
+				and feature assignments.
+			</p>
+		</div>
+		<br class="clear" />
+		<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+		<hr class="yellow" />
+		<p class="skills-and-tools">
+		  Phil has developed proficiency and expertise
+		  in the following programming languages and
+		  comfort with the following tools.
+		</p>
+		<div class="icons">
+			<img src="github.png" class="icon" />
+			<img src="rubocop.png" class="icon" />
+			<img src="trello.png" class="icon" />
+			<img src="slack.png" class="icon" />
+			<img src="codeship.png" class="icon" />
+		
+			<br class="clear" />
+			<img src="skills.png" class="icon"/>
+		</div>
+
+		<div class="contact-me" id="hire-me">
+			<h3 class="contact-headline">Want to connect?</h3>
+			<hr class="yellow" />
+			<p class="contact-info">
+				Send me an email: 
+			</p>
+			<p>
+				<a href="mailto:philip.gerity@outlook.com" class="contact-link">
+					philip.gerity@outlook.com
+				</a>
+			</p>
+	</body>
+
+</html>
